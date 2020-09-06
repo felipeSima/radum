@@ -12,7 +12,13 @@ export default function Login({navigation}) {
     const [user, setUser] = useState('');
     const [showPassword, setShowPassword] = useState(true);
     const [password, setPassword] = useState('');
+
+    const goToHome = () => {
+        console.log('Go to Home')
+        AppStack.navigate(route.home)
+    }
     const goToForgetPassword = () => {
+        console.log('Forget pass')
         AppStack.navigate(route.forgetPassword)
     }
 
@@ -46,7 +52,7 @@ export default function Login({navigation}) {
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <TouchableOpacity style = {styles.button_container} onPress = {()=> {dispatch(AuthCreators.loggingIn({user,password}))}}>
+                    <TouchableOpacity style = {styles.button_container} onPress = {()=> {goToHome}}>
                         <Text style = {styles.button_title}>Confirmar</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = {styles.forget_passorword_button} onPress = {goToForgetPassword}>

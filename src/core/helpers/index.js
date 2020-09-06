@@ -5,20 +5,15 @@ export const servicesList =  [
         image: require('../../../assets/images/coffe_worker.jpg'),
     },
     {
-        id:"OASJHSNDKljnsbasdIU",
-        title:"Serviço 1",
-        image: require('../../../assets/images/coffe_worker.jpg),
-    },
-    {
-        id:"OASJHSNDKljnsbasdIU",
-        title:"Serviço 1",
+        id:"OASJHSNDKljnsbasdIUhshs",
+        title:"Serviço 2",
         image: require('../../../assets/images/coffe_worker.jpg'),
     },
     {
-        id:"OASJHSNDKljnsbasdIU",
-        title:"Serviço 1",
+        id:"OASJHSNDKljnsbasdIU21312",
+        title:"Serviço 3",
         image: require('../../../assets/images/coffe_worker.jpg'),
-    }
+    },
 ];
 
 export const workResultList =  [
