@@ -2,21 +2,29 @@ import React, {useState, useEffect}from 'react';
 import {View,Text, ScrollView, FlatList, TouchableOpacity, SafeAreaView, Image} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
-import {servicesList, mainList} from '../../../core/helpers';
+import {workerProfileList, mainList} from '../../../core/helpers';
+import {useNavigation} from '@react-navigation/native';
+import routes from '../../../core/navigation/routes';
 
 function Home() {
+    const AppStack = useNavigation();
+    const workerDetails = workerProfileList;
+
+    function goToWorkerDetails(details){
+        AppStack.navigate(routes.workerDetail,{details})
+      }
 
     const Services = ({ title, image }) => (
-    <View style={styles.services_container}>
+    <TouchableOpacity style={styles.services_container} onPress = {() => {AppStack.navigate(routes.workersList)}}>
         <Image style={styles.services_image} source={image}/>
         <Text style={styles.services_title}>{title}</Text>
-    </View>
+    </TouchableOpacity>
     );
 
-    const Works = ({image}) => (
-        <View style={styles.recomended_work_container}>
+    const Works = ({image, details}) => (
+        <TouchableOpacity style={styles.recomended_work_container} onPress = {() => {goToWorkerDetails(details)}}>
             <Image style = {styles.work_button} source = {image}/>
-        </View>
+        </TouchableOpacity>
     )
 
     
@@ -49,7 +57,7 @@ function Home() {
     );
 
     const renderWorks = ({ item }) => (
-        <Works image={item.image} />
+        <Works image={item.service_image} details = {item} />
     );
 
 

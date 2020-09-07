@@ -1,14 +1,13 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../../features/home/presentation';
-import Explorer from '../../features/explorer/presentation';
-import Forum from '../../features/forum/presentation';
 import Profile from '../../features/profile/presentation';
-import Requests from '../../features/requests/presentation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {colors} from '../themes/index';
 import routes from './routes';
-import RootStack from './RootStack';
+import HomeStack from './HomeStack';
+import ExplorerStack from './ExplorerStack';
+import RequestStack from './RequestStack';
+import ForumStack from './ForumStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -50,10 +49,10 @@ export default function TabStackScreen() {
         },
       })}
   >
-        <Tab.Screen name={routes.home} component={RootStack} />
-        <Tab.Screen name={routes.explorer} component={Explorer} />
-        <Tab.Screen name={routes.requests} component={Requests} />
-        <Tab.Screen name={routes.forum} component={Forum} />
+        <Tab.Screen name={routes.home} component={HomeStack} />
+        <Tab.Screen name={routes.explorer} component={ExplorerStack} />
+        <Tab.Screen name={routes.requests} component={RequestStack} />
+        <Tab.Screen name={routes.forum} component={ForumStack} />
         <Tab.Screen name={routes.profile} component={Profile} />
      </Tab.Navigator>
   );

@@ -8,6 +8,10 @@ const Route = {
     requests: 'Requests',
     forum: 'Forum',
     profile: 'Profile',
+    workersList: 'WorkersList',
+    workerDetail: 'WorkerDetail',
+    payments: 'Payments',
+    confirmation: 'Confirmation',
 }
 
 export default Route;

@@ -5,38 +5,33 @@ export const mainList = [
         data:[
             {
                 id:"OASJHSNDKljnsbasdIU",
-                title:"Serviço 1",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Tecnologia",
+                image: require('../../../assets/images/tec.png'),
             },
             {
                 id:"OASJHSNDKljnsbasdIUhshs",
-                title:"Serviço 2",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Sáude",
+                image: require('../../../assets/images/health.png'),
             },
             {
                 id:"OASJHSNDKljnsbasdIU21312",
-                title:"Serviço 3",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Mecanica",
+                image: require('../../../assets/images/car.png'),
             },
             {
                 id:"OASJHSNDKljns5basdIU21312",
-                title:"Serviço 4",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Estética",
+                image: require('../../../assets/images/beauty.png'),
             },
             {
                 id:"OASJHSND445KljnsbasdIU21312",
-                title:"Serviço 5",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Cursos",
+                image: require('../../../assets/images/curses.png'),
             },
             {
                 id:"OASJHSNDK1212ljnsbasdIU21312",
-                title:"Serviço 6",
-                image: require('../../../assets/images/coffe_worker.jpg'),
-            },
-            {
-                id:"OASJHSNDKljndsasbasdIU21312",
-                title:"Serviço 7",
-                image: require('../../../assets/images/coffe_worker.jpg'),
+                title:"Manutenção",
+                image: require('../../../assets/images/maintainence.png'),
             },
         ],
     },
@@ -45,24 +40,146 @@ export const mainList = [
         type:'list',
         data:[
             {
-                id:"OASJHSNDKljnsbasdIU",
-                image: require('../../../assets/images/movie_maker.jpg'),
+                id:"OASJHSNDKljnsbasdI213123U",
+                name: 'Maria Candido',
+                role:"Fotografa",
+                image: require('../../../assets/images/profile.jpg'),
+                service_image: require('../../../assets/images/photo_fix.jpg'),
+                bio:"Especialista em fotografia há 20 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+                price: "200 R$",
+                location: "São Paulo",
+                finishedServices: "200",
+                rate: "4.5",
+                tagList:[
+                    {
+                        id: "OAS7658JHSNDKljnsbasdIU",
+                        tag: 'retrato'
+                    },
+                    {
+                        id: "OASJHSN6567DKljnsbasdIU",
+                        tag: 'casamento'
+                    },
+                ]
             },
             {
-                id:"OASJHSNDKljnsbasdIU",
-                image: require('../../../assets/images/movie_maker.jpg'),
+                id:"OASJHSNDKljnsb23213asdI213123U",
+                name: 'Roseli Fernandes',
+                role:"Tatuadora",
+                bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+                price: "70 R$",
+                location: "Zona Leste - São Paulo",
+                finishedServices: "23",
+                rate: "4.8",
+                image: require('../../../assets/images/women_profile_2.jpg'),
+                service_image: require('../../../assets/images/tattoo_work.jpg'),
+                tagList:[
+                    {
+                        id: "OAS7658JHSNDKljnsbasdIU",
+                        tag: 'realista'
+                    },
+                    {
+                        id: "OASJHSN6567DKljnsbasdIU",
+                        tag: 'aquarela'
+                    },
+                    {
+                        id: "OAS43566JHSNDKljnsbasdIU",
+                        tag: 'pontilhismo'
+                    },
+                    {
+                        id: "OASJHSND213KljnsbasdIU",
+                        tag: 'retrato'
+                    },
+                ]
             },
             {
-                id:"OASJHSNDKljnsbasdIU",
-                image: require('../../../assets/images/movie_maker.jpg'),
+                id:"OASJHSNDKljnsb23213asdI213123U",
+                name: 'Roseli Fernandes',
+                role:"Tatuadora",
+                bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+                price: "70 R$",
+                location: "Zona Leste - São Paulo",
+                finishedServices: "23",
+                rate: "4.8",
+                image: require('../../../assets/images/women_profile_2.jpg'),
+                service_image: require('../../../assets/images/wall_work.jpg'),
+                tagList:[
+                    {
+                        id: "OAS7658JHSNDKljnsbasdIU",
+                        tag: 'realista'
+                    },
+                    {
+                        id: "OASJHSN6567DKljnsbasdIU",
+                        tag: 'aquarela'
+                    },
+                    {
+                        id: "OAS43566JHSNDKljnsbasdIU",
+                        tag: 'pontilhismo'
+                    },
+                    {
+                        id: "OASJHSND213KljnsbasdIU",
+                        tag: 'retrato'
+                    },
+                ]
             },
             {
-                id:"OASJHSNDKlj213312nsbasdIU",
-                image: require('../../../assets/images/movie_maker.jpg'),
+                id:"OASJHSNDKljnsb23213asdI213123U",
+                name: 'Roseli Fernandes',
+                role:"Tatuadora",
+                bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+                price: "70 R$",
+                location: "Zona Leste - São Paulo",
+                finishedServices: "23",
+                rate: "4.8",
+                image: require('../../../assets/images/women_profile_2.jpg'),
+                service_image: require('../../../assets/images/movie_maker.jpg'),
+                tagList:[
+                    {
+                        id: "OAS7658JHSNDKljnsbasdIU",
+                        tag: 'realista'
+                    },
+                    {
+                        id: "OASJHSN6567DKljnsbasdIU",
+                        tag: 'aquarela'
+                    },
+                    {
+                        id: "OAS43566JHSNDKljnsbasdIU",
+                        tag: 'pontilhismo'
+                    },
+                    {
+                        id: "OASJHSND213KljnsbasdIU",
+                        tag: 'retrato'
+                    },
+                ]
             },
             {
-                id:"OASJHSNDK5534ljnsbasdIU",
-                image: require('../../../assets/images/movie_maker.jpg'),
+                id:"OASJHSNDKljnsb23213asdI213123U",
+                name: 'Roseli Fernandes',
+                role:"Tatuadora",
+                bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+                price: "70 R$",
+                location: "Zona Leste - São Paulo",
+                finishedServices: "23",
+                rate: "4.8",
+                image: require('../../../assets/images/women_profile_2.jpg'),
+                service_image: require('../../../assets/images/mechanic_work.jpg'),
+                tagList:[
+                    {
+                        id: "OAS7658JHSNDKljnsbasdIU",
+                        tag: 'realista'
+                    },
+                    {
+                        id: "OASJHSN6567DKljnsbasdIU",
+                        tag: 'aquarela'
+                    },
+                    {
+                        id: "OAS43566JHSNDKljnsbasdIU",
+                        tag: 'pontilhismo'
+                    },
+                    {
+                        id: "OASJHSND213KljnsbasdIU",
+                        tag: 'retrato'
+                    },
+                ]
             },
         ],
     }
@@ -110,20 +227,20 @@ export const workResultList =  [
     {
         id:"OASJHSNDKljnsbasdI213123U",
         tag:'Tatuagem',
-        title:"Serviço 1",
-        image: require('../../../assets/images/movie_maker.jpg'),
+        title:"Tatuagem",
+        image: require('../../../assets/images/tattoo_work.jpg'),
     },
     {
         id:"OASJHSNDKljnsbas44212dIU",
-        tag:'Pintura',
-        title:"Serviço 2",
-        image: require('../../../assets/images/movie_maker.jpg'),
+        tag:'Fotografia',
+        title:"Fotografia",
+        image: require('../../../assets/images/photo_fix.jpg'),
     },
     {
         id:"OASJHSNDK54353ljnsbasdIU",
-        tag:'Tecnologia',
-        title:"Serviço 3",
-        image: require('../../../assets/images/movie_maker.jpg'),
+        tag:'Autobolismo',
+        title:"Mecânica",
+        image: require('../../../assets/images/mechanic_work.jpg'),
     }
 ];
 
@@ -133,12 +250,50 @@ export const workerProfileList =  [
         name: 'Maria Candido',
         role:"Fotografa",
         image: require('../../../assets/images/profile.jpg'),
+        bio:"Especialista em fotografia há 20 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+        price: "200 R$",
+        location: "São Paulo",
+        finishedServices: "200",
+        rate: "4.5",
+        tagList:[
+            {
+                id: "OAS7658JHSNDKljnsbasdIU",
+                tag: 'retrato'
+            },
+            {
+                id: "OASJHSN6567DKljnsbasdIU",
+                tag: 'casamento'
+            },
+        ]
     },
     {
         id:"OASJHSNDKljnsb23213asdI213123U",
         name: 'Roseli Fernandes',
-        role:"Pintora",
+        role:"Tatuadora",
+        bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
+        price: "70 R$",
+        location: "Zona Leste - São Paulo",
+        finishedServices: "23",
+        rate: "4.8",
         image: require('../../../assets/images/women_profile_2.jpg'),
+        tagList:[
+            {
+                id: "OAS7658JHSNDKljnsbasdIU",
+                tag: 'realista'
+            },
+            {
+                id: "OASJHSN6567DKljnsbasdIU",
+                tag: 'aquarela'
+            },
+            {
+                id: "OAS43566JHSNDKljnsbasdIU",
+                tag: 'pontilhismo'
+            },
+            {
+                id: "OASJHSND213KljnsbasdIU",
+                tag: 'retrato'
+            },
+        ]
     },
 ];
 

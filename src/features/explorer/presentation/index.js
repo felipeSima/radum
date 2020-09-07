@@ -3,16 +3,22 @@ import {View,Text, TouchableOpacity, FlatList, TextInput, Image} from 'react-nat
 import styles from './styles';
 import {colors} from '../../../core/themes';
 import {workResultList} from '../../../core/helpers';
+import routes from '../../../core/navigation/routes';
+import {useNavigation} from '@react-navigation/native';
 
 function Explorer() {
     const [searchText, setSearchText] = useState('');
     const servicesList = workResultList;
     var [tempList, setTempList] = useState(workResultList);
-
-
+    const AppStack = useNavigation()
+    
+    const goToWorkersList = () => {
+      AppStack.navigate(routes.workersList)
+    }
+ 
     const searchFilter = text => {
         if (text == ''){
-            setTempList(workResultList);
+            setTempList(servicesList);
         }else{
           const newData = servicesList.filter( item => {
             return (
@@ -48,10 +54,10 @@ function Explorer() {
 
 
     const Services = ({title, image}) => (
-        <View style={styles.recomended_work_container}>
+        <TouchableOpacity style={styles.recomended_work_container} onPress = {() => {goToWorkersList()}}>
             <Image style={styles.services_image} source={image}/>
             <Text style={styles.services_title}>{title}</Text>
-        </View>
+        </TouchableOpacity>
     )
 
     const renderServices = ({ item }) => (

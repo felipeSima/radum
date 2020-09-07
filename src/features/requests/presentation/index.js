@@ -3,9 +3,12 @@ import {View,Text, TouchableOpacity, FlatList, Image} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
 import {workResultList, workerProfileList} from '../../../core/helpers';
+import {useNavigation} from '@react-navigation/native';
+import routes from '../../../core/navigation/routes';
 
 function Requests() {
     const [isPrevious, setIsPrevious] = useState(false);
+    const AppStack = useNavigation();
 
     function handleToggleButton(){
         setIsPrevious(true)
@@ -43,7 +46,7 @@ function Requests() {
 
     function ServiceRequestItem({name,role, image}) {
        return(
-            <View style ={styles.service_request_item_container}>
+            <TouchableOpacity style ={styles.service_request_item_container} onPress = {() => {AppStack.navigate(routes.payments)}}>
                 <View style ={styles.first_row}>
                     <Image style ={styles.avatar_image} source={image}/>
                     <View style ={styles.info_container}>
@@ -64,7 +67,7 @@ function Requests() {
                         </View>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
        );
     }
 

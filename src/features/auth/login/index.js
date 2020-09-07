@@ -14,11 +14,9 @@ export default function Login({navigation}) {
     const [password, setPassword] = useState('');
 
     const goToHome = () => {
-        console.log('Go to Home')
         AppStack.navigate(route.home)
     }
     const goToForgetPassword = () => {
-        console.log('Forget pass')
         AppStack.navigate(route.forgetPassword)
     }
 
