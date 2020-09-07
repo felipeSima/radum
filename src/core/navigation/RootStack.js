@@ -1,8 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-
-import NewRecord from '../../features/new_record';
-import HomeStackScreen from './HomeStack';
+import Home from '../../features/home/presentation';
 
 const RootStack = createStackNavigator();
   
@@ -11,9 +9,9 @@ export default function RootStackScreen() {
       <RootStack.Navigator mode = 'modal' headerShown = {false}>
         <RootStack.Screen 
             name = "MainStack" 
-            component = {HomeStackScreen} 
+            component = {Home} 
             options = {{ 
-                title: 'Gaivota',
+                title: 'Home',
                 headerShown: false
             }
         }/>

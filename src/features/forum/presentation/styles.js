@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'stretch',
-        marginTop:40,
+        marginTop:60,
         marginHorizontal:16,
     },
     user_container:{
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     user_title:{
         fontFamily: 'openSans_bold',
         fontSize: 18,
-        color: colors.radum_dark_gray,
+        color: colors.radum_orange,
     },
     user_address:{
         fontFamily: 'openSans_regular',
@@ -34,39 +34,6 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: colors.radum_dark_gray,
     },
-    services_container: {
-        borderRadius:10,
-        marginRight:10,
-        marginTop: 10,
-    },
-    recomended_work_container:{
-        flex:1,
-        flexDirection:'row',
-        alignItems:'stretch',
-    },
-    work_button:{
-        marginTop:10,
-        flex:1,
-        borderRadius: 5,
-        height:200,
-        marginHorizontal:5,
-    },
-    services_title:{
-        marginTop:5,
-        textAlign:'center',
-        fontFamily: 'openSans_regular',
-        fontSize: 14,
-    },
-    title: {
-        marginTop:20,
-        fontFamily: 'openSans_bold',
-        fontSize: 18,
-    },
-    services_image:{
-        borderRadius:5,
-        width:100,
-        height:100,
-    }
 })
 
 export default styles;

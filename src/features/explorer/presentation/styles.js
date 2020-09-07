@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'stretch',
-        marginTop:60,
+        marginTop:40,
         marginHorizontal:16,
     },
     user_container:{
@@ -33,6 +33,28 @@ const styles = StyleSheet.create({
         fontFamily: 'openSans_regular',
         fontSize: 14,
         color: colors.radum_dark_gray,
+    },
+    title: {
+        marginTop:20,
+        fontFamily: 'openSans_bold',
+        fontSize: 18,
+    },
+    recomended_work_container:{
+        flex:1,
+        alignItems:'stretch',
+        marginHorizontal:5,
+    },
+    services_image:{
+        marginTop:10,
+        borderRadius: 5,
+        height:200,
+        width:'100%',
+    },
+    services_title:{
+        marginTop:5,
+        textAlign:'center',
+        fontFamily: 'openSans_regular',
+        fontSize: 14,
     },
 })
 

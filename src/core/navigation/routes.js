@@ -4,7 +4,10 @@ const Route = {
     signIn: 'SignIn',
     forgetPassword: 'ForgetPassword',
     home: 'Home',
-    explorer: 'Explorer'
+    explorer: 'Explorer',
+    requests: 'Requests',
+    forum: 'Forum',
+    profile: 'Profile',
 }
 
 export default Route;
