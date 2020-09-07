@@ -141,3 +141,10 @@ export const workerProfileList =  [
         image: require('../../../assets/images/women_profile_2.jpg'),
     },
 ];
+
+export const userProfile = {
+    name: 'Clara Ferreira',
+    level: 'Bronze',
+    image: require('../../../assets/images/user_profile.jpg'),
+
+}
