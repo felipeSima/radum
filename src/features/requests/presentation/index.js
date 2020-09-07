@@ -1,5 +1,5 @@
 import React, {useState, useEffect}from 'react';
-import {View,Text, TouchableOpacity, FlatList, Image} from 'react-native';
+import {View,Text, TouchableOpacity, FlatList, Image, StatusBar} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
 import {workResultList, workerProfileList} from '../../../core/helpers';
@@ -88,6 +88,7 @@ function Requests() {
 
     return(
         <View style ={styles.container}>
+            <StatusBar barStyle = {Platform.OS === 'ios' ? 'dark-content' : 'dark-content'} backgroundColor = {colors.radum_orange}/>
             <Text style ={styles.title}>Pedidos</Text>
             <ServiceRequestList/>
         </View>

@@ -1,5 +1,5 @@
 import React, {useState, useEffect}from 'react';
-import {View,Text, Image, ScrollView, TextInput, FlatList} from 'react-native';
+import {View,Text, Image, ScrollView, TextInput, FlatList, StatusBar} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -65,6 +65,7 @@ function Forum() {
 
     return(
         <View style ={styles.container}>
+            <StatusBar barStyle = {Platform.OS === 'ios' ? 'dark-content' : 'dark-content'} backgroundColor = {colors.radum_orange}/>
             <ForumQuestionList/>
         </View>
     )

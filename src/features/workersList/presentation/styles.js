@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: 'stretch',
         marginHorizontal:16,
+        marginTop:40,
+    },
+    header_title: {
+        textAlign: 'center',
+        fontFamily: 'openSans_bold',
+        fontSize: 18,
     },
     title: {
         textAlign: 'center',

@@ -13,19 +13,11 @@ export default function ExplorerStackScreen() {
     return (
       <ExplorerStack.Navigator headerShown = {false} screenOptions = {navigationProps}>
         <ExplorerStack.Screen 
-            name = {routes.explorer}
-            component = {Explorer} 
+            name = {routes.workersList}
+            component = {WorkersList} 
             options = {{ 
                 title: 'Explorar',
                 headerShown: false
-            }
-        }/>
-          <ExplorerStack.Screen 
-            name = {routes.workersList} 
-            component = {WorkersList} 
-            options = {{ 
-                title: 'Workers List',
-                headerShown: true
             }
         }/>
           <ExplorerStack.Screen 

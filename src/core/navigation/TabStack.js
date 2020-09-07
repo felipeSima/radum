@@ -1,4 +1,5 @@
 import React from 'react';
+import {StatusBar} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Profile from '../../features/profile/presentation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';

@@ -246,28 +246,29 @@ export const workResultList =  [
 
 export const workerProfileList =  [
     {
-        id:"OASJHSNDKljnsbasdI213123U",
+        id:"OASJHSNDKljnxdsbasdI213123U",
         name: 'Maria Candido',
         role:"Fotografa",
-        image: require('../../../assets/images/profile.jpg'),
+        image: require('../../../assets/images/profile_6.jpg'),
+        service_image: require('../../../assets/images/photo_fix.jpg'),
         bio:"Especialista em fotografia há 20 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
         price: "200 R$",
         location: "São Paulo",
-        finishedServices: "200",
+        finishedServices: "16",
         rate: "4.5",
         tagList:[
             {
-                id: "OAS7658JHSNDKljnsbasdIU",
+                id: "OAS7658JsasdaHSNDKljnsbasdIU",
                 tag: 'retrato'
             },
             {
-                id: "OASJHSN6567DKljnsbasdIU",
+                id: "OASJH21313SN6567DKljnsbasdIU",
                 tag: 'casamento'
             },
         ]
     },
     {
-        id:"OASJHSNDKljnsb23213asdI213123U",
+        id:"OASJHSNDKljn2442sb23213asdI213123U",
         name: 'Roseli Fernandes',
         role:"Tatuadora",
         bio:"Especialista em Tatuagem há 4 anos. Já trabalhei em estudios, casamentos. Gosto de explorar a perspectiva com os arredores",
@@ -276,22 +277,143 @@ export const workerProfileList =  [
         finishedServices: "23",
         rate: "4.8",
         image: require('../../../assets/images/women_profile_2.jpg'),
+        service_image: require('../../../assets/images/tattoo_work.jpg'),
         tagList:[
             {
                 id: "OAS7658JHSNDKljnsbasdIU",
                 tag: 'realista'
             },
             {
-                id: "OASJHSN6567DKljnsbasdIU",
+                id: "OASJHSsadaN6567DKljnsbasdIU",
                 tag: 'aquarela'
             },
             {
-                id: "OAS43566JHSNDKljnsbasdIU",
+                id: "OAS4322566JHSNDKljnsbasdIU",
                 tag: 'pontilhismo'
             },
             {
-                id: "OASJHSND213KljnsbasdIU",
+                id: "OASJ654HSND213KljnsbasdIU",
                 tag: 'retrato'
+            },
+        ]
+    },
+    {
+        id:"OASJHSNDKljnsasvbksb23213asdI213123U",
+        name: 'Keyla Melo',
+        role:"Mecânica",
+        bio:"Trabalho com funilaria e elétrica. Especialista em Motos.",
+        price: "300 R$",
+        location: "Zona Sul - São Paulo",
+        finishedServices: "41",
+        rate: "4.7",
+        image: require('../../../assets/images/profile_3.jpg'),
+        service_image: require('../../../assets/images/wall_work.jpg'),
+        tagList:[
+            {
+                id: "OAS7658JHSNDKljnskubasdIU",
+                tag: 'Funilaria'
+            },
+            {
+                id: "OASJHSN6567DKfyyfyljnsbasdIU",
+                tag: 'Eletrica'
+            },
+            {
+                id: "OAS43566JHSNDKljnscvbtbasdIU",
+                tag: 'Pintura'
+            },
+            {
+                id: "OASJHSND213Kljns657basdIU",
+                tag: 'Borracharia'
+            },
+        ]
+    },
+    {
+        id:"OASJHSNDKljnsb23213asmktfdI213123U",
+        name: 'Jocelina Alves',
+        role:"Reformas e Reparos",
+        bio:"Há 7 trabalho com reformas e reparos gerais da casa.",
+        price: "150 R$",
+        location: "Penha - Zona Leste",
+        finishedServices: "73",
+        rate: "5.0",
+        image: require('../../../assets/images/profile.jpg'),
+        service_image: require('../../../assets/images/movie_maker.jpg'),
+        tagList:[
+            {
+                id: "OAS7658JHSNDKljnsbaacxzsdIU",
+                tag: 'Pintura'
+            },
+            {
+                id: "OASJHSN6567DKljnsertsbasdIU",
+                tag: 'Encanamento'
+            },
+            {
+                id: "OAS43566JHSNDKfchljnsbasdIU",
+                tag: 'Elétrica'
+            },
+            {
+                id: "OASJHSND213KljgsdsnsbasdIU",
+                tag: 'Troca de Piso'
+            },
+        ]
+    },
+    {
+        id:"OASJHSNDKljnsb23213ashdfdI213123U",
+        name: 'Juliana Freitas',
+        role:"Advogada",
+        bio:"Especialista em direito do trabalhador & direito penal.",
+        price: "300 R$",
+        location: "Recife Pernambuco",
+        finishedServices: "4",
+        rate: "4.1",
+        image: require('../../../assets/images/profile_5.jpg'),
+        service_image: require('../../../assets/images/mechanic_work.jpg'),
+        tagList:[
+            {
+                id: "OAS7658JHSNhtyu56DKljnsbasdIU",
+                tag: 'Direito Penal'
+            },
+            {
+                id: "OASJHSN6567DKljnsbasdIU",
+                tag: 'Direito Familiar'
+            },
+            {
+                id: "OAS43566JHSNDKd643ljnsbasdIU",
+                tag: 'Direito Civil'
+            },
+        ]
+    },
+    {
+        id:"OASJHSNDKljnsb23213ashdfd324gI213123U",
+        name: 'Mariana Barros',
+        role:"Personal Trainer",
+        bio:"Formada em Ed. Fisica, ex-atleta da seleção brasileira de judô.",
+        price: "50 R$",
+        location: "Zona Sul - São Paulo",
+        finishedServices: "122",
+        rate: "4.0",
+        image: require('../../../assets/images/profile_4.jpg'),
+        service_image: require('../../../assets/images/mechanic_work.jpg'),
+        tagList:[
+            {
+                id: "OAS7658JHSNhtyu56DKljnsbasdIU",
+                tag: 'Hipertrofia'
+            },
+            {
+                id: "OASJHSN6567DKljnsbasdIU",
+                tag: 'Artes Marciais'
+            },
+            {
+                id: "OAS43566JHSNDKd643ljnsbasdIU",
+                tag: 'Musculação'
+            },
+            {
+                id: "OASJHSND213Kljns234basdIU",
+                tag: 'Cross fit'
+            },
+            {
+                id: "OASJHSjija4ND213Kljns234basdIU",
+                tag: 'Treino Funcional'
             },
         ]
     },

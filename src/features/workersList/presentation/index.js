@@ -1,8 +1,8 @@
 import React, {useState, useEffect}from 'react';
-import {View,Text, TouchableOpacity, FlatList, Image, TextInput, StatusBar} from 'react-native';
+import {View,Text, TouchableOpacity, FlatList, Image, TextInput, StatusBar, SafeAreaView} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
-import {workResultList, workerProfileList} from '../../../core/helpers';
+import {workerProfileList} from '../../../core/helpers';
 import {useNavigation} from '@react-navigation/native';
 import { FontAwesome } from '@expo/vector-icons';
 import routes from '../../../core/navigation/routes';
@@ -10,8 +10,8 @@ import routes from '../../../core/navigation/routes';
 
 function Requests() {
   const [searchText, setSearchText] = useState('');
-  const servicesList = workResultList;
-  var [tempList, setTempList] = useState(workResultList);
+  const servicesList = workerProfileList;
+  var [tempList, setTempList] = useState(workerProfileList);
   const AppStack = useNavigation()
 
   function goToWorkerDetails(details){
@@ -66,12 +66,13 @@ function Requests() {
 
     const searchFilter = text => {
       if (text == ''){
-          setTempList(workResultList);
+          setTempList(servicesList);
       }else{
         const newData = servicesList.filter( item => {
           return (
-            item.title.toLowerCase().includes(text.toLowerCase()) ||
-            item.tag.toLowerCase().includes(text.toLowerCase()) )
+            item.name.toLowerCase().includes(text.toLowerCase()) ||
+            item.role.toLowerCase().includes(text.toLowerCase())
+            )
         })
         setTempList(newData)
       }
@@ -108,7 +109,7 @@ function Requests() {
     function ServiceRequestList(){
         return(
             <FlatList
-                data={workerProfileList}
+                data={tempList}
                 renderItem={renderServiceRequests}
                 keyExtractor={item => item.id}
                 ListHeaderComponent={<SearchField/>}
@@ -117,10 +118,11 @@ function Requests() {
     }
 
     return(
-        <View style ={styles.container}>
-          <StatusBar barStyle = {Platform.OS === 'ios' ? 'light-content' : 'light-content'} backgroundColor = {colors.radum_orange}/>
+        <SafeAreaView style ={styles.container}>
+          <StatusBar barStyle = {Platform.OS === 'ios' ? 'dark-content' : 'dark-content'} backgroundColor = {colors.radum_orange}/>
+            <Text style={styles.header_title}>Explorar</Text>
             <ServiceRequestList/>
-        </View>
+        </SafeAreaView>
     )
 }
 
