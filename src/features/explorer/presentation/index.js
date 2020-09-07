@@ -60,6 +60,7 @@ function Explorer() {
 
     return(
         <View style ={styles.container}>
+            <Text style={styles.header_title}>Explorar</Text>
             <SearchField/>
             <FlatList
                 data={tempList}

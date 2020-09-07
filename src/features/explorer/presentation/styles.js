@@ -17,6 +17,11 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: colors.radum_orange,
     },
+    header_title: {
+        textAlign: 'center',
+        fontFamily: 'openSans_bold',
+        fontSize: 18,
+    },
     user_address:{
         fontFamily: 'openSans_regular',
         fontSize: 14,

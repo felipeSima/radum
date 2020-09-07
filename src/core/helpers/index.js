@@ -148,3 +148,24 @@ export const userProfile = {
     image: require('../../../assets/images/user_profile.jpg'),
 
 }
+
+export const forumQuestions = [
+    {
+        id:"OASJHSNDKljnsbasdI21312ssdf3U",
+        question: 'Quando preciso trocar de óleo?',
+        answer: 'A cada 5.000km em média, mas depende da marca do carro.',
+        tag:"Mecânica",
+    },
+    {
+        id:"OsadasA4556SJHSNDKljnsb23213asdI213123U",
+        question: 'Meu computador ficou com uma tela azul o que devo fazer?',
+        answer: 'Tenta reinstalar o sistema operacional, funcionou comigo.',
+        tag:"Tecnologia",
+    },
+    {
+        id:"122ASJHSNDKljnsb23213asdI213123U",
+        question: 'De quanto em quanto tempo preciso retocar a tatuagem?',
+        answer: 'Depende da tatuagem, as minhas eu retoco a cada..',
+        tag:"Tatuagem",
+    },
+];
