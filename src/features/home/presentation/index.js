@@ -1,5 +1,5 @@
 import React, {useState, useEffect}from 'react';
-import {View,Text, ScrollView, FlatList, TouchableOpacity, SafeAreaView, Image} from 'react-native';
+import {View,Text, StatusBar, FlatList, TouchableOpacity, SafeAreaView, Image} from 'react-native';
 import styles from './styles';
 import {colors} from '../../../core/themes';
 import {workerProfileList, mainList} from '../../../core/helpers';
@@ -63,8 +63,9 @@ function Home() {
 
     return(
         <SafeAreaView style ={styles.container}>
+            <StatusBar barStyle = {Platform.OS === 'ios' ? 'dark-content' : 'dark-content'} backgroundColor = {colors.radum_orange}/>
                 <View style ={styles.user_container}>
-                    <Text style={styles.user_title}>Olá <Text style={{color: colors.radum_orange}}>Karen</Text></Text>
+                    <Text style={styles.user_title}>Olá <Text style={{color: colors.radum_orange}}>Clara</Text></Text>
                     <Text style={styles.user_address}>Avenida das Cerejeiras, 1040</Text>
                 </View>
                 <FlatList
