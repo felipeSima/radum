@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems:'center'
     },
-
     progress_container:{
         marginTop:10,
         flexDirection:'row',
