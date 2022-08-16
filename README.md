@@ -1,4 +1,4 @@
-## Flash App
+## Radum App
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
@@ -6,11 +6,30 @@
 
 
 ## Descrição
-O maior cartão multibenefícios do Brasil com saldo corporativo integrado. Simplificando toda gestão em uma única plataforma.
+O maior app de contribuição
 
 **Table of Contents**
 
-[TOCM]
+- [Flash App](#flash-app)
+- [Descrição](#descri--o)
+- [Detalhes do projeto](#detalhes-do-projeto)
+- [Modularização](#modulariza--o)
+    + [**📈 Prós**](#-----pr-s--)
+    + [**📉 Contras**](#-----contras--)
+- [Arquitetura](#arquitetura)
+    + [Dados](#dados)
+    + [Domínio](#dom-nio)
+    + [Apresentação](#apresenta--o)
+- [Instalando e rodando o projeto](#instalando-e-rodando-o-projeto)
+- [Contribuição](#contribui--o)
+      - [Criando uma Feature Branch](#criando-uma-feature-branch)
+      - [Abrindo uma Pull request](#abrindo-uma-pull-request)
+      - [Acompanhando o deploy da Branch](#acompanhando-o-deploy-da-branch)
+- [Publicação de Versões](#publica--o-de-vers-es)
+- [Leituras adicionais](#leituras-adicionais)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Detalhes do projeto
 Esse projeto foi estruturado utilizando react native como principal framework de desenvolvimento.
